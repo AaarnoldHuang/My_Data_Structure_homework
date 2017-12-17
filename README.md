@@ -1,9 +1,17 @@
-# ÎÒµÄÊı¾İ½á¹¹×÷Òµ
-## ºÏ²¢ÁËËÄ¸öÊµÑé
-- Ë³Ğò´æ´¢½á¹¹
-- Á´Ê½´æ´¢½á¹¹
-- Ê÷
-- Í¼
+# æˆ‘çš„æ•°æ®ç»“æ„ä½œä¸š
+## åˆå¹¶äº†å››ä¸ªå®éªŒ
+- é¡ºåºå­˜å‚¨ç»“æ„
+- é“¾å¼å­˜å‚¨ç»“æ„
+- æ ‘
+- å›¾
+
+![](https://github.com/hgx1412/My_Data_Structure_homework/blob/master/sjjg1.png)
+
+![](https://github.com/hgx1412/My_Data_Structure_homework/blob/master/sjjg2.png)
+
+![](https://github.com/hgx1412/My_Data_Structure_homework/blob/master/sjjg3.png)
 
 
+![](https://github.com/hgx1412/My_Data_Structure_homework/blob/master/sjjg4.png)
 
+![](https://github.com/hgx1412/My_Data_Structure_homework/blob/master/sjjg5.png)
