@@ -4,21 +4,20 @@ using System.Text;
 
 namespace sjjg
 {
-    //------图的邻接矩阵-------------------------------------------------
+    
     struct VertexType					    //顶点类型
     {
-        public int no;						//顶点编号
-        public string data;				    //顶点其他信息
+        public int no;						
+        public string data;				    
     };
     struct MGraph                           //图邻接矩阵类型
     {
-        public int [,] edges;		        //邻接矩阵的边数组
-        public int n,e;					    //顶点数，边数
-        public VertexType [] vexs;		    //存放顶点信息
+        public int [,] edges;		        
+        public int n,e;					    
+        public VertexType [] vexs;		    
     };
-    //-------------------------------------------------------------------
-
-    //------图的邻接表---------------------------------------------------
+   
+  
     class ArcNode					        //边结点类型
     {
         public int adjvex;			        //该边的终点编号
@@ -35,20 +34,21 @@ namespace sjjg
         public VNode [] adjlist;			//邻接表数组
         public int n,e;					    //图中顶点数n和边数e
     };						
-    //-------------------------------------------------------------------
+
     class GraphClass
     {
         const int MAXV = 100;               //最大顶点个数
         const int INF = 32767;              //用INF表示∞
         MGraph g = new MGraph();
         ALGraph G = new ALGraph();
+
         public GraphClass()                 //构造函数
         {
             g.edges = new int[MAXV,MAXV];
             g.vexs = new VertexType[MAXV];
             G.adjlist = new VNode[MAXV];
         }
-        //-------图的基本运算算法-----------------
+
         public void CreateMGraph(int n, int e, int[,] a)  //通过相关数据建立邻接矩阵
         {
             int i, j;
@@ -58,6 +58,7 @@ namespace sjjg
                 for (j = 0; j < g.n; j++)
                     g.edges[i, j] = a[i, j];
         }
+
         public string DispMGraph()                         //输出图的邻接矩阵
         {
             string mystr = "";
@@ -73,6 +74,7 @@ namespace sjjg
             }
             return mystr;
         }
+
         public void MatToList()	                            //将邻接矩阵g转换成邻接表G
         {
             int i, j;
@@ -92,6 +94,7 @@ namespace sjjg
             G.n = g.n;
             G.e = g.e;
         }
+
         public string DispALGraph()                            //输出图的邻接表
         {
             string mystr = "";
@@ -112,6 +115,7 @@ namespace sjjg
             }
             return mystr;
         }
+
         public void ListToMat()				                //将邻接表G转换成邻接矩阵g
         {
             int i;
@@ -128,7 +132,7 @@ namespace sjjg
             g.n = G.n; g.e = G.e;
         }
 
-        //--------------------------------------------------------------------
+        
         public int Getn()                                       //返回图的顶点个数
         {
             return g.n;
@@ -137,7 +141,7 @@ namespace sjjg
         {
             return g.e;
         }
-        //---------图的其他运算算法-------------------------------------------
+        
         public int Degree1(int v)                               //通过无向图的邻接矩阵求顶点i的度
         {
             int i, j,d = 0;
@@ -192,6 +196,6 @@ namespace sjjg
                     else p = p.nextarc;
             }
         }
-        //---------------------------------------------------------------------
+        
     }
 }
