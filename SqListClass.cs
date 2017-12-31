@@ -11,6 +11,7 @@ namespace sjjg
         const int MaxSize = 100;
         public string[] data;        //存放顺序表中的元素
         public int length;           //存放顺序表的长度
+
         public SqListClass()               //构造函数
         {
             data = new string[MaxSize];
@@ -24,6 +25,7 @@ namespace sjjg
                 data[i] = split[i];
             length = i;
         }
+
         public string DispList()                 //显示顺序表
         {
             int i;
